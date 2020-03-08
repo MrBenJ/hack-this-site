@@ -3,6 +3,9 @@
   <head>
     <title>Art project template</title>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/codemirror.css">
+    <script src="/static/codemirror.js"></script>
+    <script src="/static/javascript.js"></script>
     <style>
       body {
         margin: 0;
@@ -16,7 +19,13 @@
   </head>
   <body>
     <div class="body">
-      <div class="box"></div>
+      <h1 class="title">HACK THIS SITE</h1>
+      <div class="hack-section">
+        <div id="hackable">MAKE ME SAY HELLO WORLD</div>
+      </div>
+      <div class="editor-section hide">
+        <textarea id="editor"></textarea>
+      </div>
     </div>
   </body>
   <script src="/static/script.js"></script>
@@ -24,5 +33,5 @@
     // IMPORTANT: Make sure This script tag is the very last <script> tag in this file!
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
     ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script> 
+    </script>
 </html>

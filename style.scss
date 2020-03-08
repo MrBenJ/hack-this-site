@@ -2,22 +2,22 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-color: #000; 
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
   overflow: hidden;
 }
 
-.box {
-  background-color: white;
-  height: 50px;
-  width: 50px;
-  transition: all .2s ease-in-out;
+.hide {
+  display: none;
+}
 
-  &:hover {
-    background-color: blue;
-    cursor: pointer;
-  }
-  &.expand {
-    height: 500px;
-    width: 500px;
-  }
+.title {
+  color: white;
+  text-align: center;
+}
+
+#hackable {
+  font-size: 3rem;
+  color: white;
 }
